@@ -22,9 +22,12 @@ class broom:
 
         def get_info():
             
+            try:
                 target = path_entry.get()
                 ext=ext_entry.get()
                 del_file(target,ext)
+            except:
+                messagebox.showerror("Error","Invalid Path/Extension")
             
 
         def del_file(target, ext):
