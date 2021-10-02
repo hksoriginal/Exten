@@ -12,7 +12,7 @@ class broom:
     def __init__(self, root):
         self.root = root
         self.root.geometry("800x600")
-        self.root.title("Extension Groom")
+        self.root.title("Extension Broom")
         self.root.iconbitmap('icon.ico')
 
         bg_frame = Frame(root, bg="#333333", width=200, height=100)
